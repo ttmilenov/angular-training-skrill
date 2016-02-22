@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>net.pracxs.angularjs</groupId>
+	<artifactId>net.pracxs.angularjs.oldway.ui</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<tomcat.version>8.0.20</tomcat.version>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<warName>pracxs</warName>
+					<warSourceDirectory>webapp</warSourceDirectory>
+					<failOnMissingWebXml>true</failOnMissingWebXml>
+					<outputDirectory>${env.CATALINA_HOME}\webapps\</outputDirectory>
+					<warSourceExcludes>**/node_modules/,**/package.json,**/Gruntfile.js,**/bower.json,**/.*,**/less/,**/src/,**/bower_components/</warSourceExcludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

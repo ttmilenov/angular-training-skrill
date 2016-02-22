@@ -1,0 +1,191 @@
+/* ----------------------------------------------------
+Pracxs project Stylesheet
+
+Updated: 30/06/2015
+Website: http://www.pracxs.com
+
+Copyright (C) 2015 Pracxs Net & ITCE - All Rights Reserved
+You may use, distribute and modify this code under the
+terms of the Prometheus courses license.
+
+You should have received a copy of the Prometheus courses
+license.If not, please write to: prometheus@pracxs.com
+or to prometheus@itce.com
+---------------------------------------------------- */
+
+@import "../../bower_components/bootstrap/less/bootstrap.less";
+@import "./pracxs-theme.less";
+
+.pracxs-box-shadow--2dp {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12)
+}
+.box-shadow--3dp {
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14), 0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0 rgba(0, 0, 0, .12)
+}
+.box-shadow--4dp {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2)
+}
+.box-shadow--6dp {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12), 0 3px 5px -1px rgba(0, 0, 0, .2)
+}
+.box-shadow--8dp {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2)
+}
+.box-shadow--16dp {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2)
+}
+
+.text-small-caps {
+	font-variant: small-caps;
+}
+
+.text-info {
+	color: #6cb44a;
+}
+
+.text-danger {
+	color: #c40030;
+}
+
+.font-bold {
+	font-weight: bold;
+}
+
+.medium {
+    font-size: medium;
+}
+
+#content {
+	padding-bottom: 140px; /* fixed header + fixed footer */
+}
+
+#header .navbar-brand {
+	padding: 0;
+	padding-top: 12px;
+}
+
+#header .container {
+	padding: 0;
+}
+
+.pracxs-header {
+	.navbar;
+	.navbar-fixed-top;
+	.box-shadow--4dp;
+}
+
+.header-links a {
+	color: #ecf0f1;
+}
+
+.header-links .text-muted {
+	color: #eccfcf;
+}
+
+.footer {
+	background: #fff;
+	height: 80px;
+	padding-top: 30px;
+}
+
+.footer-links a {
+	color: #777;
+}
+
+input.ordered {
+	width: 6ch;
+	padding-right: 1px;
+	font-weight: bold;
+}
+
+.order-line {
+	cursor: pointer;
+}
+
+.order-line .ordered {
+	border-color: #fff;
+}
+
+.order-line:hover .ordered {
+	border-color: #ccc;
+}
+
+.ordered:focus, .order-line:hover .ordered:focus {
+	border-color: #66afe9;
+}
+
+.order-line .medium {
+	padding-top: 13px;
+}
+
+.order-line .normal {
+	padding-top: 15px;
+}
+
+.order-line .hint {
+	.visible-xs-inline;
+	.glyphicon;
+	.glyphicon-info-sign;
+}
+
+.order-line .line-total {
+	.text-right;
+	.text-info;
+	.font-bold;
+	.medium;
+}
+
+.category-holder table, .category-holder h3, .order-total {
+	position: relative;
+	top: 60px;
+}
+
+/* --- Dynamic Nav --- */
+
+#menu-nav {
+	padding: 0 10px 60px 10px; 	/* for proper scrolling with fixed header and footer */
+    float: right;
+    right: 0;
+    position: static;
+    margin-top: 100px;
+}
+
+#menu-nav.affix {
+	position: fixed;
+	margin-top: 70px;
+    top: 0;
+}
+
+#menu-nav.affix-top {
+    position: static;
+}
+
+#menu-nav.affix-bottom {
+	position: static;
+    bottom: 0;
+}
+
+#menu-nav .nav-header {
+	padding: 4px 20px 4px 6px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#menu-nav ul>li>a {
+    padding: 4px 20px 4px 6px;
+    font-size: 13px;
+    font-weight: 400;
+    border-left: 2px solid transparent;
+}
+
+#menu-nav ul>li>a:hover, #menu-nav ul>li>a:active {
+	color: #c40030;
+	background: transparent;
+}
+
+#menu-nav .active>a,
+#menu-nav .active>a:hover,
+#menu-nav .active>a:active {
+	color: #c40030;
+	border-left: 2px solid #c40030;
+}

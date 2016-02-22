@@ -1,0 +1,17 @@
+1.  npm install -g jasmine
+2.  jasmine init
+3.  jasmine examples
+4.  jasmine
+5.  npm install angular-mocks --save-dev
+6.  Jasmine Releases SpecRunner.html (integrate with our tests)
+7.  demonstrate xit(), xdescribe() & empty it()
+8.  npm install -g karma
+9.  karma init
+10.  karma start
+11. load http://localhost:9876/base/spec/nullSpec.js
+12. karma run
+13. make test of directive
+14. npm install -g karma-junit-reporter
+15. npm install -g karma-coverage
+16. npm install grunt-karma
+17. reuires all karma things to be installed locally

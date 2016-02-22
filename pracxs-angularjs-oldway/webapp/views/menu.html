@@ -1,0 +1,62 @@
+<nav id="menu-nav" class="hidden-sm hidden-xs" data-spy="affix" data-offset-top="70" data-offset-bottom="90">
+  <ul class="nav nav-list nav-stacked">
+    <li class="nav-header text-uppercase">menu</li>
+    <li ng-repeat="category in categories">
+      <a href="#category-{{category.id}}" spy-click>{{category.name}}</a>
+    </li>
+    <li><a href="#order-total" spy-click>TOTAL <span class="font-bold text-danger">{{orderTotal | currency }}</span></a></li>
+  </ul>
+</nav>
+
+<div class="container" id="content">
+  <div class="col-md-10 col-xs-12 col-lg-11">
+    <div ng-repeat="category in categories" id="category-{{category.id}}" class="category-holder">
+      <h3>{{category.name}}</h3>
+      <table class="table table-hover">
+        <thead>
+          <tr class="">
+            <th class="col-xs-8">Name</th>
+            <th class="col-xs-1 text-right hidden-xs">Available</th>
+            <th class="col-xs-1 text-right">Price</th>
+            <th class="col-xs-1 text-right">Quantity</th>
+            <th class="col-xs-1 text-right">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="item in category.items" class="order-line" focus-on-click=".ordered">
+            <td>
+              <div>
+                {{item.name}}
+                <i class="hint" role="button" tabindex="-1"
+                    tooltip="{{item.description}}" tooltip-trigger="mouseenter focus" block-click-propagation></i>
+              </div>
+              <div class="text-muted hidden-xs">{{item.description}}</div>
+            </td>
+            <td class="text-right hidden-xs normal">{{item.quantity}}</td>
+            <td class="text-right normal">{{item.price | currency}}</td>
+            <td class="text-right">
+              <input class="ordered pull-right text-right form-control"
+                  name="ordered"
+                  type="number"
+                  max="{{item.quantity}}"
+                  min="0"
+                  autocomplete="off"
+                  ng-model="item.ordered"
+                  ng-focus="$(this).select()"
+                  number-mask
+                  select-on-click>
+            </td>
+            <td class="line-total">{{ item.price * item.ordered | nullCurrency}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="order-total" class="well well-lg text-right ng-cloak order-total" ng-cloak ng-if="categories.length">
+      <div class="lead">Total: <span class="font-bold text-info">{{orderTotal | currency }}</span></div>
+      <button class="btn btn-danger" ng-class=" orderTotal<=0 ? 'disabled' : '' " ng-click="doOrder()">
+        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+        Order
+      </button>
+    </div>
+  </div>
+</div>

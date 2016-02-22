@@ -1,0 +1,12 @@
+﻿{
+	"HELLO": "Здравей",
+	"EXIT": "Излез",
+	"MENU": "Меню",
+	"TOTAL": "Всичко",
+	"ORDER": "Поръчай",
+	"MENU-ITEM-NAME": "Име",
+	"MENU-ITEM-AVAILABLE": "Наличност",
+	"MENU-ITEM-PRICE": "Цена",
+	"MENU-ITEM-QUANTITY": "Брой",
+	"MENU-ITEM-TOTAL": "Общо"
+}

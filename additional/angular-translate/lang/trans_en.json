@@ -1,0 +1,12 @@
+{
+	"HELLO": "Hello",
+	"EXIT": "Exit",
+	"MENU": "Menu",
+	"TOTAL": "Total",
+	"ORDER": "Order",
+	"MENU-ITEM-NAME": "Name",
+	"MENU-ITEM-AVAILABLE": "Available",
+	"MENU-ITEM-PRICE": "Price",
+	"MENU-ITEM-QUANTITY": "Quantity",
+	"MENU-ITEM-TOTAL": "Total"
+}

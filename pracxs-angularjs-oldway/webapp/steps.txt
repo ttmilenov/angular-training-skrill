@@ -1,0 +1,12 @@
+1.  Install npm.msi x64
+2.  Change npm default dir
+3.  Fixing npm permissions: add default dir to path
+4.  Install grunt and grunt-cli
+5.  Install grunt-init
+6.  Setup grunt server
+7.  Install bower
+8.  bower install jquery#1.11.3
+9.  npm install load-grunt-tasks --save-dev 
+10. npm install -g less --save-dev
+11. npm install grunt-contrib-less --save-dev
+12. npm install grunt-contrib-watch --save-dev

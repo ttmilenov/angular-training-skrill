@@ -1,0 +1,60 @@
+<!doctype html>
+<html ng-app="pracxsApp">
+  <head>
+  	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>Pracxs</title>
+  	<link rel="stylesheet" href="css/pracxs.min.css">
+  	<style type="text/css"
+  		[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+		  display: none !important;
+		}
+  	></style>
+  </head>
+  <body data-spy="scroll" data-target="#menu-nav" data-offset="120">
+    <nav id="header" class="navbar-default pracxs-header">
+	    <div class="container">
+        <a href="#/" class="logo col-xs-3"><img id="logo" style="height: 4em;" src="img/logo.png" alt="ITCE &amp; Pracxs"/></a>
+		 		<div class="text-right navbar-brand col-xs-9 ng-cloak" ng-cloak>
+          <ul class="header-links list-inline">
+			<li ng-controller="LangCtrl"><a ng-click="changeLanguage()" class="small text-muted" role="button">{{switchCode | uppercase}}</a></li>
+            <li class="hidden-xs">{{'HELLO' | translate}} {{loggedUserName}}</li>
+            <li class="hidden-xs text-muted small">|</li>
+            <li><a class="btn btn-danger small text-small-caps" href="/logout">
+            	<span class="glyphicon glyphicon-log-out"></span> {{'EXIT' | translate}}
+            </a></li>
+		 			</ul>
+		 		</div>
+		  </div>
+    </nav>
+
+    <div class="container-fluent ng-cloak" ng-cloak ng-view app-view-rendered></div>
+
+    <footer class="footer navbar-fixed-bottom">
+    	<div class="container">
+	      		<div class="copyright col-sm-8 text-muted">&copy; Copyright ITCE & Pracxs 2015</div>
+	      		<div class="text-right col-sm-4">
+		      		<ul class="footer-links list-inline">
+		      			<li><a target="_blank" href="http://www.itce.com/">ITCE</a></li>
+		      			<li class="text-muted small">|</li>
+		      			<li><a target="_blank" href="http://www.pracxs.com/">Pracxs.Net</a></li>
+		      		</ul>
+	      		</div>
+	    </div>
+    </footer>
+
+	<!--
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="src/js/app.js"></script>
+    <script src="src/js/controllers.js"></script>
+    <script src="src/js/directives.js"></script>
+    <script src="src/js/filters.js"></script>
+    <script src="src/js/services.js"></script> -->
+    <script src="js/pracxs.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+{
+  "name": "pracxs-angular-restaurant",
+  "description": "Physics-like animations for pretty particles",
+  "version": "0.0.1",
+  "private": true,
+  "main": [
+    "js/app.js",
+    "js/controllers.js",
+    "js/directives.js",
+    "js/filters.js",
+    "js/services.js"
+  ],
+  "dependencies": {
+    "angular": "1.3.1",
+    "angular-bootstrap": "~0.13.4",
+    "angular-route": "1.3.1",
+    "bootstrap": "3.3.5",
+    "jquery": "1.11.3",
+    "ui-bootstrap": "~0.13.4"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/js/bootstrap.js",
+        "dist/css/bootstrap.css",
+        "less/bootstrap.less"
+      ]
+    }
+  },
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "Pracxs.Net",
+    "ITCE",
+    "Course"
+  ],
+  "authors": [
+    "Todor Kisov <todor.kisov@pracxs.com> (http://pracxs.com)"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

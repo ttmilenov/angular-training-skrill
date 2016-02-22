@@ -1,0 +1,170 @@
+[ {
+  "id" : 1,
+  "name" : "Салати",
+  "order" : 10,
+  "items" : [ {
+    "id" : 1,
+    "name" : "Шопска салата",
+    "price" : 3.5,
+    "quantity" : 10.0,
+    "description" : "На къде без нея с печени чушки и червен лук",
+    "categoryId" : 1,
+    "order" : 10
+  }, {
+    "id" : 2,
+    "name" : "Салата домати",
+    "price" : 2.9,
+    "quantity" : 10.0,
+    "description" : "На много големи кръгчета",
+    "categoryId" : 1,
+    "order" : 20
+  }, {
+    "id" : 3,
+    "name" : "Салата краставици",
+    "price" : 2.8,
+    "quantity" : 10.0,
+    "description" : "И тази е на много кръгчета",
+    "categoryId" : 1,
+    "order" : 30
+  }, {
+    "id" : 4,
+    "name" : "Овчарска салата",
+    "price" : 6.1,
+    "quantity" : 10.0,
+    "description" : "Мокрите сънища на овчарите",
+    "categoryId" : 1,
+    "order" : 40
+  }, {
+    "id" : 5,
+    "name" : "Зелена салата",
+    "price" : 3.1,
+    "quantity" : 10.0,
+    "description" : "Идеална за лятото и зимата",
+    "categoryId" : 1,
+    "order" : 50
+  } ]
+}, {
+  "id" : 2,
+  "name" : "Предястия",
+  "order" : 20,
+  "items" : [ {
+    "id" : 6,
+    "name" : "Пилешки дробчета",
+    "price" : 3.1,
+    "quantity" : 10.0,
+    "description" : "Не става за вегетарианци",
+    "categoryId" : 2,
+    "order" : 10
+  }, {
+    "id" : 7,
+    "name" : "Ориз със зеленчуци",
+    "price" : 3.7,
+    "quantity" : 10.0,
+    "description" : "За вегетарианци, но не веганци",
+    "categoryId" : 2,
+    "order" : 20
+  }, {
+    "id" : 8,
+    "name" : "Пържени картофи",
+    "price" : 3.1,
+    "quantity" : 10.0,
+    "description" : "Още известни като ПКС",
+    "categoryId" : 2,
+    "order" : 30
+  }, {
+    "id" : 9,
+    "name" : "Пържени картофи със сирене",
+    "price" : 3.8,
+    "quantity" : 10.0,
+    "description" : "и ПКС със сирене",
+    "categoryId" : 2,
+    "order" : 40
+  }, {
+    "id" : 10,
+    "name" : "Кашкавал натюр",
+    "price" : 2.5,
+    "quantity" : 10.0,
+    "description" : "Това кой го яде",
+    "categoryId" : 2,
+    "order" : 50
+  }, {
+    "id" : 11,
+    "name" : "Луканка",
+    "price" : 3.1,
+    "quantity" : 10.0,
+    "description" : "Домашна за ценители",
+    "categoryId" : 2,
+    "order" : 60
+  } ]
+}, {
+  "id" : 3,
+  "name" : "Супи",
+  "order" : 30,
+  "items" : [ {
+    "id" : 12,
+    "name" : "Таратор",
+    "price" : 2.9,
+    "quantity" : 10.0,
+    "description" : "Без крастваици и без кисело мляко",
+    "categoryId" : 3,
+    "order" : 10
+  }, {
+    "id" : 13,
+    "name" : "Шкембе чорба",
+    "price" : 2.7,
+    "quantity" : 10.0,
+    "description" : "На следващата сутрин",
+    "categoryId" : 3,
+    "order" : 20
+  } ]
+}, {
+  "id" : 5,
+  "name" : "Основни ястия",
+  "order" : 50,
+  "items" : [ {
+    "id" : 14,
+    "name" : "Шницел по виенски",
+    "price" : 12.1,
+    "quantity" : 10.0,
+    "description" : "Отнема време докато пристигне от Виена",
+    "categoryId" : 5,
+    "order" : 10
+  }, {
+    "id" : 15,
+    "name" : "Рамстек с лук",
+    "price" : 8.69,
+    "quantity" : 10.0,
+    "description" : "Не го знам какво е ама виж колко лук има",
+    "categoryId" : 5,
+    "order" : 20
+  }, {
+    "id" : 16,
+    "name" : "Пържени кюфтета",
+    "price" : 5.5,
+    "quantity" : 10.0,
+    "description" : "Кюфтета на баба или може би на дядо не помня",
+    "categoryId" : 5,
+    "order" : 30
+  } ]
+}, {
+  "id" : 7,
+  "name" : "Десерти",
+  "order" : 70,
+  "items" : [ {
+    "id" : 17,
+    "name" : "Бисквитена торта",
+    "price" : 3.49,
+    "quantity" : 10.0,
+    "description" : "Не е домашна ама става",
+    "categoryId" : 7,
+    "order" : 10
+  }, {
+    "id" : 18,
+    "name" : "Домашен сладолед",
+    "price" : 3.29,
+    "quantity" : 10.0,
+    "description" : "Е този вече е домашен ама не е френска нуга",
+    "categoryId" : 7,
+    "order" : 20
+  } ]
+} ]
